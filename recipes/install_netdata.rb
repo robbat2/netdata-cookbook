@@ -73,13 +73,13 @@ when 'ubuntu','debian'
 		action :nothing
 	end
 
-	%w{gcc make git autoconf autogen automake pkg-config}.each do |logger|
-		log logger do
-			action :nothing
-			subscribes :write, "package[#{logger}]"
-			notifies :remove, "package[#{logger}]", :delayed
-		end
-	end
+	#%w{gcc make git autoconf autogen automake pkg-config}.each do |logger|
+	#	log logger do
+	#		action :nothing
+	#		subscribes :write, "package[#{logger}]"
+	#		notifies :remove, "package[#{logger}]", :delayed
+	#	end
+	#end
 else
 	raise("Unsupported platform family")
 end
