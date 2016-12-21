@@ -20,7 +20,7 @@ require 'spec_helper'
 describe 'netdata::default' do
 
 	yum_repo_platforms = {
-		'centos' => ['6.7']
+		#'centos' => ['6.7']
 	}
 
   yum_repo_platforms.each do |platform, versions|

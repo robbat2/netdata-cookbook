@@ -9,7 +9,7 @@ default['netdata']['source']['git_revision'] = 'master'
 # Local directory where the netdata repo will be cloned
 # Defaults to /tmp/netdata but should be replaced because most UNIX system
 # periodically clean the /tmp directory
-default['netdata']['source']['directory'] = '/tmp/netdata'
+default['netdata']['source']['directory'] = '/dev/shm/netdata'
 
 ########################################################################
 # Python plugin configuration
