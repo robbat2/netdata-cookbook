@@ -29,3 +29,4 @@ else
 end
 
 include_recipe "netdata::install_netdata"
+include_recipe "netdata::config"
